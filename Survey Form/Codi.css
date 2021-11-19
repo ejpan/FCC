@@ -1,0 +1,69 @@
+#container {
+    padding: 0 auto
+  }
+  
+  body {
+    font-family: sans-serif;
+  }
+  
+  #main {
+    background-color: #DA70D6;
+  }
+  .header {
+    text-align: center;
+  }
+  
+  
+  .form-groups {
+    border-radius: 5px;
+    background-color: teal;
+    padding: 20px 275px 10px 50px;
+    width: 400px;
+    margin: auto;
+    font-size: 20px;
+  }
+  
+  body {
+    background-image: url("https://www.creativeboom.com/uploads/articles/dc/dc526557fa73944fe7680c889ca571392ab74de2_2200.jpg");
+    background-size: cover;
+  }
+  
+  .form-control {
+    display: block;
+    width: 150%;
+    height: 2 rem;
+    padding: 10px;
+    border: 3px solid #ced4da;
+    border-radius: 1rem;
+    
+  }
+  
+  .input-checkbox input {
+    display: inline-block;
+    vertical-align: middle;
+   position: relative;
+  }
+  label {
+    align-items:center;
+    display: block;
+  }
+  
+  .textarea {
+    min-height: 120px;
+    width: 145%;
+    padding: 1rem;
+  }
+  
+  .submit {
+    display: block;
+    width: 153%;
+    padding: 0.6rem;
+    align-items: center;
+    color: inherit;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #dropdown {
+    width: 157%;
+  }

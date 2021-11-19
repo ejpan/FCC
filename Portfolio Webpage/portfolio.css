@@ -1,0 +1,150 @@
+body {
+    font-family: sans-serif;
+    background-color: white;
+    margin: 0px;
+  }
+  
+  #navbar{
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    top: 0;
+    right: 0;
+  }
+  
+  .navlist {
+    list-style-type: none;
+    display: flex;
+    padding: 0px 100px;
+  }
+  
+  .navlist li{
+    text-decoration: none;
+    font-weight: 600;
+    padding: 5px 15px;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    margin: 0px 10px;
+  }
+  
+  .navlist a{
+    color:rgb(50,50,50);
+  }
+  
+  .welcome-section{
+    background-image: url("https://images6.alphacoders.com/549/549228.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+   flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h1{
+    font-size: 45px;
+    font-weight: 700;
+    color: white;
+  }
+  
+  p{
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+  }
+  
+  .projects {
+    display: flex;
+    width: 100%;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    padding: 0px 0px 65px;
+  }
+  
+  .projects-header{
+    display: flex;
+    color:rgb(40,40,40);
+    justify-content: center;
+    padding: 10px;
+    margin: 50px 0px 50px;
+  }
+  
+  .projects-grid {
+    display: grid;
+    max-width: 1280px;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 100px;
+  }
+  
+  .projects-image {
+    box-shadow: 3px 3px 3px #333333;
+  }
+  
+  .projects-title {
+    background-color: rgb(45,45,45);
+    padding: 10px;
+    margin: 0px;
+    width: 83%;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  a:link {
+    text-decoration: none;
+  }
+  
+  .contact {
+    justify-content: center;
+    padding: 25px;
+    text-align: center;
+  }
+  
+  h3{
+    font-size: 25px;
+    color: rgb(50,50,50);
+  }
+  .contact-p {
+    font-size: 20px;
+    color: rgb(40,40,40);
+  }
+  
+  .contact-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .contact-icons {
+    padding: 30px 50px;
+    font-size: 20px;
+    text-decoration: none;
+    color:rgb(40,40,40);
+    font-weight: 675;
+  }
+  
+  .contact-icons:hover {
+    transform: translateY(-8px);
+  }
+  
+  @media (max-width: 850px){
+    .projects-grid {
+      display: flex;
+      flex-direction: column;
+    }
+    .projects-title {
+      align-text: center;
+      width: 93.5%;
+    }
+    .contact-links {
+      display: grid;
+      margin: auto;
+      
+    }
+  }
+  
+  

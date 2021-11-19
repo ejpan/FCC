@@ -1,0 +1,101 @@
+<div class="container">
+    <header class="header">
+      <h1 id="title"> Codi's Experience Survey</h1>
+      <p id="description"> How is your experience with Codi? </p>
+    </header>
+  
+  <form id="survey-form">
+    <div class="form-groups">
+      <label id="name-label">Name</label>
+        <input 
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              placeholder="Enter name"
+              required />
+    </div>
+      <div class="form-groups">
+        <label id="email-label">Email</label>
+          <input 
+               type="email"
+               name="email"
+               id="email"
+               class="form-control"
+               placeholder="Enter email"
+               required />
+    </div>
+    <div class="form-groups">
+      <label id="number-label">Age</label>
+      <input 
+             type="number"
+             name="age"
+             id="number"
+             min="18"
+             max="80"
+             class="form-control"
+             placeholder="Enter Age"
+             /></div>
+      <div class="form-groups">
+        <label>How did you discover Codi?</label>
+        <select id="dropdown" class="form-control" name="discovery" required>
+          <option disabled selected value></option>
+          <option value="search">Seach Engine</option>
+          <option value="social">Social Media</option>
+          <option value="media">Newspaper</option>
+          <option value="article">Magazine</option>
+          <option value="co-worker">Co-Worker</option>
+          <option value="friend">Friend</option>
+        <option value="other">Other</option>
+          </select>
+      </div>
+      
+      <div class="form-groups">
+        <p>How likely would you recommend Codi to a friend or colleague?</p>
+        <label class="input-checkbox">
+          <input
+                 name="recommend"
+                 type="checkbox"
+                 
+                 />Extremely likely</label>
+        <label class="input-checkbox">
+          <input
+                 name="recommend"
+                 type="checkbox"
+                 /><span>Very likely</span></label>
+        <label class="input-checkbox">
+          <input
+                 name="recommend"
+                 type="checkbox"
+                 /><span>Somewhat likely</span></label>
+        <label class="input-checkbox">
+          <input
+                 name="recommend"
+                 type="checkbox"
+                 /><span>Not so likely</span></label>
+        <label class="input-checkbox">
+          <input
+                 name="recommend"
+                 type="checkbox"
+                 /><span>Not at all likely</span></label>
+      </div>
+      
+      <div class="form-groups">
+        <p>Any comments or suggestions?</p>
+        <textarea
+                  id="comments"
+                  class="textarea"
+                  name="comments"
+                  placeholder="Comments Here"
+                  ></textarea>
+    </div>
+      
+    <div class="form-groups">
+      <input 
+             type="submit"
+             id="submit"
+             class="submit"
+             name="submit"
+          
+           
+               

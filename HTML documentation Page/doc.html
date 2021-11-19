@@ -1,0 +1,145 @@
+<nav id="navbar" class="navbar">
+    <header class="title">HTML Documentation</header>
+    <ul class="nav-link-list">
+      <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+      <li><a class="nav-link" href="#Hello_World">Hello World</a></li>
+      <li><a class="nav-link" href="#Basic_Elements">Basic Elements</a></li>
+      <li><a class="nav-link" href="#Attributes">Attributes</a></li>
+      <li><a class="nav-link" href="#Links">Links</a></li>
+      <li><a class="nav-link" href="#Images">Images</a></li>
+      <li><a class="nav-link" href="#Lists">Lists</a></li>
+      <li><a class="nav-link" href="#Reference">Reference</a></li>
+    </ul>
+  </nav>
+  
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <article> 
+        <p>HTML (HyperText Markup Language) is a standard developed over the years to convey information over the internet by using "hyperlinks" - or just links as we know them today. As opposed to a PDF, an HTML page is much more dynamic in nature, letting you browse the web by clicking on links and interacting with the page. Links could take you either to a different location within the current page, or to a different page over the internet.</p>
+        <p>The last version of HTML is HTML 5.0, which has a LOT more capabilities than what the web originally had in mind. HTML 5 is an extremely comprehensive platform that allows creating a high-end user interface together with the power of CSS and JavaScript. HTML 5 is so powerful that it has managed to deprecate Adobe Flash, Microsoft's Silverlight, and just about all HTML plugins such as video players, Java applets, and more.</p>
+        <p>So what is the difference between HTML, CSS, and JavaScript? First of all, they can all be encapsulated within an HTML page, meaning that the browser starts by loading an HTML page, and only then it knows what to load from there.</p>
+      <ul>
+        <li>An HTML page is an HTML document that defines the content of the page by using a special markup similar to XML. </li>
+          <li>A CSS stylesheet defines the style of the HTML elements in the page. It is either embeeded within an HTML page or loaded using the tag.</li>
+        <li>JavaScript is the programming language used to interact with the HTML page through an API called the DOM (Document Object Model) Bindings. In other words, the DOM Bindings are the glue between the programming language and the HTML page that was initially loaded into the browser.</li>
+            </ul>
+            </article>
+          </section>
+          
+          <section class="main-section" id="Hello_World">
+      <header>Hello World</header>
+            <article>
+            <p>Let's start by creating a simple page that contains the phrase "Hello, World!" in the body. The page will also have a title - that thing that shows up in the title of the tab in your browser. The &lt;title> element defines the title of the HTML page.</p>
+            <p>The &lt;p> element defines a "paragraph", a block of text that has a small amount of spacing in between its top and bottom.</p>
+            <p> The tags have a start tag and an end tag denoted with a slash &lt;/p>. Everything in between is the content of the tag. The content of a tag can usually have additional HTML tags within them. Here is an example of a simple html layout with a code editor that says "Hello World": </p>
+             <pre>&lt;html>
+    &lt;title>Example&lt;/title>
+    &lt;p>Hello World&lt;/p>
+  &lt;/html></pre>
+            </article>
+    </section>
+            
+           
+            <section class="main-section" id="Basic_Elements">
+      <header>Basic Elements</header>
+      <article>
+        <p>The basic elements of an HTML page are:</p>
+        <ul>
+        <li>A text header, denoted using the &lt;h1>,&lt;h2>,&lt;h3>,&lt;h4>,&lt;h5>,&lt;h6> tags.</li>
+        <li>A paragraph, denoted using the &lt;p> tag.</li>
+        <li>A link, denoted using the &lt;a> (anchor) tag.</li>
+        <li>A list, denoted using the &lt;ul> (unordered list), &lt;ol> (ordered list), and &lt;li> (list element) tags. </li> 
+        <li>An image, denoted using the &lt;img> tag.</li>
+        <li>A divider, denoted using the &lt;div> tag.</li>
+        <li>A text span, denoted using the &lt;span> tag.</li>
+        </ul>
+              </article>
+            </section>
+            
+        <section class="main-section" id="Attributes">
+      <header>Attributes</header>
+      <article>
+       <p>Each element can also have attributes - each element has a different set of attributes relevant to the element. There are a few global elements, the most common of them are:</p>
+        <ul>
+          <li>id - Denotes the unique ID of an element in a page. Used for locating elements by using links, JavaScript, and more.</li>
+          <li>class - Denotes the CSS class of an element.</li>
+          <li>style - Denotes the CSS styles to apply to an element.</li>
+        </ul>
+          </article>
+            </section>
+            
+            <section class="main-section" id="Links">
+      <header>Links</header>
+      <article>
+        <p>A link ("anchor") is a small span of text that will direct you to a different section in the page, or to a different page. To create a link, you will need to specify where you would like the user to be directed to when the link is clicked by specifying the href attribute.</p>
+        <p>For example:</p>
+        <code><xmp><a href="https://www.google.com">A link to Google</a></xmp></code>
+        <p>To create a link to a different section in the same page, you will need to use a hash sign along with the element ID to where you would like the browser to jump to. For example:</p>
+        <code><xmp><a href="#Conclusion">Click here to read the Conclusion</p></xmp></code>
+              </article>
+            </section> 
+          
+           <section class="main-section" id="Images">
+      <header>Images</header>
+      <article>
+        <p>Images in HTML are inline elements that can be placed within a paragraph. To add an image, use the &lt;img> tag along with the src attribute to specify the location of the image.</p>
+        <code><xmp><img src="/static/img/code.jpg"></xmp></code>
+             </article>
+        </section>
+       
+    <section class="main-section" id="Lists">
+      <header>Lists</header>
+      <article> 
+        <p>HTML provides a way to create both an ordered list (with elements counting up, 1, 2, 3...) and an unordered list with bullets instead of numbers. Lists are a good way to formalize a list of items and let the HTML styling do the work for you.</p>
+        <p>Here is an example of how to create an ordered list:</p>
+        <code><xmp><p>Here is a list of ordered items:</p>
+  <ol>
+      <li>First item</li>
+      <li>Second item</li>
+      <li>Third item</li>
+  </ol> 
+          </xmp></code>
+        
+        <p>Ordered lists have a "type" attribute which defines the numbering convention to use.</p>
+        <ul>
+          <li>To count using numbers, use type="1"</li>
+          <li>To count using uppercase letters, use type="A"</li>
+          <li>To count using lowercase letters, use type="a"</li>
+          <li>To count using uppercase roman numerals, use type="I"</li>
+          <li>To count using lowercase roman numerals, use type="i"</li>
+        </ul>
+        <p>Here is an example of how to create an unordered list:</p>
+        <code><xmp><p>Here is a list of unordered items:</p>    
+  <ul>
+      <li>First item</li>
+      <li>Second item</li>
+      <li>Third item</li>
+  </ul>
+          </xmp></code>
+        <p>To change the list style attributes, we can use the CSS attribute called list-style-type. The available types are:</p>
+        <ul>
+          <li>disc</li>
+          <li>circle</li>
+          <li>square</li>
+          <li>none</li>
+        </ul>
+        <p>Here is an example of the disc list style type:</p>
+        <code><xmp><p>Here is a list of unordered items:</p>    
+  <ul style="list-style-type: disc">
+      <li>First item</li>
+      <li>Second item</li>
+      <li>Third item</li>
+  </ul> 
+          </xmp></code>
+      </article>
+            </section>
+            
+    <section class="main-section" id="Reference">
+      <header>Reference</header>
+      <ul>
+        <li>All the documentation on this page is taken from <a href="https://www.learn-html.org/">learn-html.</a></li>
+      </ul>
+            </section>
+           
+         
